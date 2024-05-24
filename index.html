@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is the title.</title>
 </head>
+
+<!-- Comment syntax -->
+
+<!--
+  Comments can be 
+  multiple lines long.
+-->
+
 <body>
     <h1>This is h1</h1>
     <h2>This is h2</h2>
@@ -18,35 +26,54 @@
     <ol>
         <li>Ordered list #1</li>
         <li>Ordered list #2</li>
-      </ol>
+    </ol>
       
-      <ul>
+    <ul>
         <li>Unordered list A</li>
         <li>Unordered list B</li>
-      </ul>
+    </ul>
 
-      <p id="emphasized">This <em>word</em> will be emphasized in italics.</p>
-      <p>This word will be emphasized in <bold>bold</bold>.</p>
-      <p>This is <strong>strong</strong> text!</p>
+    <a href="#id-of-element-to-link-to">Take me to a different part of the page</a>
 
-      <div>
+    <p id="emphasized">This <em>word</em> will be emphasized in italics.</p>
+    <p>This word will be emphasized in <bold>bold</bold>.</p>
+    <p>This is <strong>strong</strong> text!</p>
+
+    <div>
         <h1>Div elements</h1>
         <p>The div element is used as a container that divides an HTML document into sections and is short for “division”. 
             div elements can contain flow content such as headings, paragraphs, links, images, etc.
         </p>
-      </div>
-      <div>
+    </div>
+    <div>
         <h1>Second section of grouped div elements</h1>
         <p id="my-paragraph" style="color: green;">Here’s some text for a paragraph that is being altered by HTML attributes</p>
-      </div>
+    </div>
 
-      <video src="Lesson 16-buy stuff.mp4" controls>
+    <video src="Lesson 16-buy stuff.mp4" controls>
         Video not supported
-      </video>
+    </video>
 
-      <img src="objects/HOWL.jpeg" alt="text describing image" />
+    <!-- The whitespace created by this line, and above/below this line is ignored by the browser-->
 
 
+    <div>
+    <img src="objects/HOWL.jpeg" alt="text describing image" width="500"/>
+    </div>
+
+    <!-- Creating text links -->
+    <a href="http://www.codecademy.com" target="_blank">Visit this site</a>
+
+    <!-- Creating image links -->
+    <a href="http://www.codecademy.com">
+	    <img src="logo.jpg">Click this image
+    </a>
+
+    <div>
+        <p id="id-of-element-to-link-to">A different part of the page!</p>
+    </div>
+      
+    <a href="./about.html">The URL for this anchor element is a relative file path.</a>
 
 </body>
 </html>
