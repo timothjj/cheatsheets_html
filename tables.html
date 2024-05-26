@@ -7,5 +7,129 @@
 </head>
 <body>
     
+    <h3>Table Rows and Data</h3>
+    <p>The table data element, td, can be nested inside a table row element, tr, to add a cell of data to a table.</p>
+    <table>
+        <tr> <!-- tr for table row-->  
+          <td>cell one data</td> <!-- td for table data-->
+          <td>cell two data</td>
+        </tr>
+    </table>
+
+    <h3>Table Head Element</h3>
+    <p>The table head element, thead, defines the headings of table columns encapsulated in table rows.</p>
+    <table>
+        <thead> <!-- thead for table header-->
+          <tr>
+            <th>heading 1</th>
+            <th>heading 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>col 1</td>
+            <td>col 2</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <h3>Rowspan Attribute</h3>
+    <p>Similar to colspan, the rowspan attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The rowspan value is set to 1 by default and will take any positive integer up to 65534.</p>
+    <table>
+        <tr>
+          <th>row 1:</th>
+          <td>col 1</td>
+          <td>col 2</td>
+        </tr>
+        <tr>
+          <th rowspan="2">row 2 (this row will span 2 rows):</th>
+          <!--Similar to colspan, the rowspan attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The rowspan value is set to 1 by default and will take any positive integer up to 65534.-->
+          <td>col 1</td>
+          <td>col 2</td>
+        </tr>
+        <tr>
+          <td>col 1</td>
+          <td>col 2</td>
+        </tr>
+         <tr>
+          <th>row 3:</th>
+          <td>col 1</td>
+          <td>col 2</td>
+        </tr>
+    </table>
+
+    <h3>Table Body Element</h3>
+    <p>The table body element, tbody, is a semantic element that will contain all table data other than table heading and table footer content. If used, tbody will contain all table row tr elements, and indicates that tr elements make up the body of the table. table cannot have both tbody and tr as direct children.</p>
+    <table>
+        <tbody>
+          <tr>
+            <td>row 1</td>
+          </tr>
+          <tr>
+            <td>row 2</td>
+          </tr>
+          <tr>
+            <td>row 3</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <h3>Table Heading Element</h3>
+    <p>The table heading element, th, is used to add titles to rows and columns of a table and must be enclosed in a table row element, tr.</p>
+    <table>
+        <tr>
+          <th>column one</th>
+          <th>column two</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+    </table>
+
+    <h3>colspan Attribute</h3>
+    <p>The colspan attribute on a table header th or table data td element indicates how many columns that particular cell should span within the table. The colspan value is set to 1 by default and will take any positive integer between 1 and 1000.</p>
+    <table>
+        <tr>
+          <th>row 1:</th>
+          <td>col 1</td>
+          <td>col 2</td>
+          <td>col 3</td>
+        </tr>
+        <tr>
+          <th>row 2:</th>
+          <td colspan="2">col 1 (will span 2 columns)</td>
+          <td>col 2</td>
+          <td>col 3</td>
+        </tr>
+    </table>
+
+    <h3>Table Footer Element</h3>
+    <p>The table footer element, tfoot, uses table rows to give footer content or to summarize content at the end of a table.</p>
+    <table>
+        <thead>
+          <tr>
+            <th>heading 1</th>
+            <th>heading 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>col 1</td>
+            <td>col 2</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>summary of col 1</td>
+            <td>summary of col 2</td>
+          </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
 </body>
 </html>
